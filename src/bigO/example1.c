@@ -11,4 +11,4 @@ int function(input) {
   return a; //O(1)
 }
 
-//O(3 + 4n)
+//O(3 + 4n) or simply O(n)

@@ -17,4 +17,4 @@ int function(input) {
   int hey[3] = "hey"; //O(1)
 }
 
-//O(4 + 7n)
+//O(4 + 7n) or simply O(n)
