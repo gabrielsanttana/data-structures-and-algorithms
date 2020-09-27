@@ -24,8 +24,11 @@
 ## What can cause time in a function?
 
 - Operations (+, -, \*, /)
+
 - Comparisons (<, >, ==)
+
 - Looping (for, while)
+
 - Outside function call (function())
 
 ## Rule Book
@@ -43,6 +46,9 @@
 ## What causes space complexity?
 
 - Variables
+
 - Data structures
+
 - Function call
+
 - Allocations
