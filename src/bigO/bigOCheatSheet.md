@@ -34,13 +34,13 @@
 
 ## Rule Book
 
-- Rule 1: Always worst case
+* Rule 1: Always worst case
 
-- Rule 2: Removeconstants
+* Rule 2: Removeconstants
 
-- Rule 3: Different inputs should have different variables. O(n + m). N and M arrays nested would be O(n _ m)
-  for steps in order: +
-  for nested steps: _
+* Rule 3: Different inputs should have different variables. O(n + m). N and M arrays nested would be O(n _ m)
+  * for steps in order: +
+  * for nested steps: _
 
 - Rule 4: Drop non-dominant terms
 
