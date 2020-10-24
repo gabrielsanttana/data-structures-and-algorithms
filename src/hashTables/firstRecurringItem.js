@@ -14,7 +14,7 @@ function getFirstRecurringItem(array) {
   }
 
   return undefined;
-} //TC = O(n^2) SC = O(1)
+} //Time = O(n^2) Space = O(1)
 
 function getFirstRecurringItem2(array) {
   let map = {};
@@ -26,7 +26,7 @@ function getFirstRecurringItem2(array) {
       map[array[i]] = i;
     }
   }
-} //TC = O(n) SC = O(n)
+} //Time = O(n) Space = O(n)
 
 console.log(getFirstRecurringItem([2, 3, 3, 2, 5, 4, 4, 4, 4]));
 console.log(getFirstRecurringItem2([2, 3, 3, 2, 5, 4, 4, 4, 4]));
