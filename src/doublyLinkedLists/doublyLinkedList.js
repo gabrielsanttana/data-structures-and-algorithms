@@ -40,6 +40,14 @@ class DoublyLinkedList {
   }
 
   insert(index, value) {
+    if (index >= this.length) {
+      return this.append(value);
+    }
+
+    if (index === 0) {
+      return this.prepend(value);
+    }
+
     const newNode = new Node(value);
 
     const leaderNode = this.traverseToIndex(index - 1);
@@ -56,6 +64,25 @@ class DoublyLinkedList {
   }
 
   remove(index) {
+    if (index > this.length || index < 0) {
+      return this;
+    }
+
+    if (index === 0) {
+      this.head = this.head.next;
+
+      return this;
+    }
+
+    if (index === this.length) {
+      const newTail = this.traverseToIndex(this.length - 2);
+
+      this.tail = newTail;
+      this.tail.next = null;
+
+      return this;
+    }
+
     const nodeToRemove = this.traverseToIndex(index);
 
     const nodeToRemovePrevious = nodeToRemove.previous;
