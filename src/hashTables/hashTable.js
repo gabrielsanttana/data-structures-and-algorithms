@@ -19,8 +19,6 @@ class HashTable {
     const address = this._hash(key);
     const currentRow = this.data[address];
 
-    console.log(currentRow);
-
     if (currentRow) {
       for (let i = 0; i < currentRow.length; i++) {
         if (currentRow[i][0] === key) {
