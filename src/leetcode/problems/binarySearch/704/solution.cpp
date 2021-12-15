@@ -6,8 +6,8 @@
 using namespace std;
 
 // Binary search
-// Space complexity = O(1)
 // Time complexity = O(log(n))
+// Space complexity = O(1)
 
 class Solution {
   public:
